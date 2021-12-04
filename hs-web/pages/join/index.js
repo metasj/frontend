@@ -1,6 +1,4 @@
-import type { NextPage } from 'next'
-
-const Join: NextPage = () => {
+const Join = () => {
     return (
         <div>
         <h1>Join hyperscale community</h1>
