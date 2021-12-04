@@ -1,7 +1,7 @@
 
 export const ApplicationForm = () => {
 
-    const registerUser = async (event: any):  => {
+    const registerUser = async event => {
         event.preventDefault() // don't redirect the page
         
     }
