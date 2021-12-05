@@ -31,3 +31,8 @@
   color: #52575c;
   font-variation-settings: "wght" 320;
 }
+
+.backgroundVector {
+  top: 50%;
+  transform: translateY(-50%);
+}
