@@ -1,5 +1,3 @@
-
 export default function handler(req, res) {
-    res.status(200).json({ name: req.body.name })
+  res.status(200).json({ name: req.body.email });
 }
-  

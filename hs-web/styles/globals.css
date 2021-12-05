@@ -4,6 +4,9 @@
   --primary-font: 'Quicksand', sans-serif;
   --primary-color: #2c2929;
   --primary-color-light: #3f3c3c;
+
+  --gray-color: #e7e7e7;
+  --gray-color-light: #a7a7a7;
 }
 
 body {
@@ -32,8 +35,15 @@ button.btn:hover {
   background-color: var(--primary-color-light);
 }
 
+button.btn[disabled] {
+  pointer-events: none;
+  background-color: var(--gray-color);
+  color: var(--gray-color-light);
+}
+
 button.btn {
   cursor: pointer;
+  border: none;
 }
 
 .list-clear {

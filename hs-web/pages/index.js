@@ -1,20 +1,30 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Landing.module.css';
 import classNames from 'classnames';
+import { useForm } from 'react-hook-form';
+import useApply from '../hooks/api';
 
 export default function Home() {
+  const { register, handleSubmit } = useForm({});
+
+  const apply = useApply();
+
+  const onSubmit = handleSubmit((data) => {
+    const email = data.email;
+    apply.mutate({ email });
+  });
+
   return (
     <div className={classNames('min-vh-100 w-100', styles.bgHome)}>
-      <Head>
-        <title>hyperscale</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="pa4">
         <div className="container center">
           <header className="flex justify-between items-center mb6">
-            <Image src="/logo.svg" width={70} height={70} />
+            <Image
+              alt="Hyperscale logo"
+              src="/logo.svg"
+              width={70}
+              height={70}
+            />
             <ul className="list list-clear list-inline">
               <li>
                 <a className="pa2" href="#">
@@ -50,8 +60,10 @@ export default function Home() {
               <p className="f4">
                 Receive $200k for 5% by filling out a simple application.
               </p>
-              <p className="f4">You'll receive a decision within 1 week.</p>
-              <form>
+              <p className="f4">
+                You&apos;ll receive a decision within 1 week.
+              </p>
+              <form action="/api/apply" method="post" onSubmit={onSubmit}>
                 <fieldset>
                   <div
                     className={classNames(
@@ -60,12 +72,16 @@ export default function Home() {
                     )}
                   >
                     <input
+                      {...register('email')}
                       className="w-100"
                       type="text"
                       placeholder="Your email address"
-                      name="email"
                     />
-                    <button type="submit" className="btn br-pill ph4 pv2">
+                    <button
+                      disabled={apply.isLoading}
+                      type="submit"
+                      className="btn br-pill ph4 pv2"
+                    >
                       Apply
                     </button>
                   </div>
