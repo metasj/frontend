@@ -3,6 +3,7 @@ import { Popover, Transition } from '@headlessui/react'
 import HyperscaleMark from '@/components/HyperscaleMark'
 import JoinDiscordIcon from '@/components/icons/JoinDiscordIcon'
 import TwitterIcon from '@/components/icons/TwitterIcon'
+import Meta from '@/components/Meta'
 import {
 	MenuIcon,
 	XIcon,
@@ -52,6 +53,7 @@ const footer = [
 
 const Landing = () => (
 	<div>
+		<Meta />
 		<div
 			className="relative bg-white overflow-hidden"
 			style={{
