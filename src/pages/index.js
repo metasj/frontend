@@ -24,12 +24,12 @@ const navigation = [
 ]
 
 const features = [
-	{ name: 'Highspeed Funding', icon: LightningBoltIcon },
-	{ name: 'Experiment-friendly', icon: BeakerIcon },
-	{ name: '$200k for 5%', icon: CashIcon },
-	{ name: 'Same-day Response', icon: MailOpenIcon },
-	{ name: 'DAO formation', icon: CubeTransparentIcon },
-	{ name: 'Community Guidance', icon: MapIcon },
+	{ name: 'Highspeed funding', icon: LightningBoltIcon, desc: 'Ac tincidunt sapien vehicula erat auctor.' },
+	{ name: 'Experiment-friendly', icon: BeakerIcon, desc: 'Ut enim ad minim veniam, pellentesque rhoncus.' },
+	{ name: '$200k for 5%', icon: CashIcon, desc: 'Et magna sic morbi lobortis.' },
+	{ name: 'Same-day response', icon: MailOpenIcon, desc: 'Duis aute irure dolor in reprehenderit in voluptate velit.' },
+	{ name: 'DAO formation', icon: CubeTransparentIcon, desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.' },
+	{ name: 'Community guidance', icon: MapIcon, desc: 'Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
 ]
 
 const footer = [
@@ -161,8 +161,8 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								Receive $200k for 5% by filling out a simple application. You’ll recieve a decision
-								within 1 week.
+								<span>Recieve $200k for 5% by filling out a simple application.</span>
+								<span>Get a decision within 1 week.</span>
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
 								<form
@@ -205,8 +205,7 @@ const Landing = () => (
 					Get your idea off the ground in hours, not months
 				</p>
 				<p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-					Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc,
-					ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+					Fast feedback and funding decisions so you can focus on execution.
 				</p>
 				<div className="mt-12">
 					<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -223,8 +222,7 @@ const Landing = () => (
 											{feature.name}
 										</h3>
 										<p className="mt-5 text-base text-gray-500">
-											Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit
-											morbi lobortis.
+											{feature.desc} 
 										</p>
 									</div>
 								</div>
