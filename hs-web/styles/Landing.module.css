@@ -7,7 +7,7 @@
   z-index: 0;
   position: relative;
   background-position: left top;
-  background: url('/bg-patterns.svg') left top no-repeat,
+  background: url("/bg-patterns.svg") left top no-repeat,
     linear-gradient(
         244.75deg,
         #a5a5a6 -10.92%,
@@ -21,4 +21,13 @@
 .formCta {
   background-color: #ffffff;
   position: relative;
+}
+
+.formButton {
+  background-color: #5d5fef !important;
+}
+
+.subtitle {
+  color: #52575c;
+  font-variation-settings: "wght" 320;
 }

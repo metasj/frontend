@@ -57,14 +57,22 @@ export default function Home() {
 
           <section>
             <div className="mw6">
-              <h1 className="f1">Fast funding for early crypto projects</h1>
-              <p className="f4">
+              <h1 className="f1 text-bold">
+                <span style={{ color: "#FFC55F" }}>Fast funding</span> for early
+                crypto projects
+              </h1>
+              <p className={classNames("f4 mt-5", styles.subtitle)}>
                 Receive $200k for 5% by filling out a simple application.
               </p>
-              <p className="f4">
+              <p className={classNames("f4 mt-3", styles.subtitle)}>
                 You&apos;ll receive a decision within 1 week.
               </p>
-              <form action="/api/apply" method="post" onSubmit={onSubmit}>
+              <form
+                action="/api/apply"
+                method="post"
+                onSubmit={onSubmit}
+                className="mt-7"
+              >
                 <fieldset>
                   <div
                     className={classNames(
@@ -81,7 +89,10 @@ export default function Home() {
                     <button
                       disabled={apply.isLoading}
                       type="submit"
-                      className="btn br-pill ph4 pv2"
+                      className={classNames(
+                        "btn br-pill ph4 pv2",
+                        styles.formButton
+                      )}
                     >
                       Apply
                     </button>
