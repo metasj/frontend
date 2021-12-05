@@ -3,7 +3,7 @@ const Meta = ({ title, desc }) => {
 	title = title ?? 'Hyperscale - Fast Funding'
 	desc =
 		desc ??
-		'Fast funding for early crypto projects. Recieve $200k for 5% by filling out a simple application. You’ll recieve a decision within 1 week.'
+		'Fast funding for early crypto projects. Receive $200k for 5% by filling out a simple application. You’ll recieve a decision within 1 week.'
 	return (
 		<Head>
 			<title>{title}</title>

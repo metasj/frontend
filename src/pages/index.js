@@ -161,7 +161,7 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								Recieve $200k for 5% by filling out a simple application. You’ll recieve a decision
+								Receive $200k for 5% by filling out a simple application. You’ll recieve a decision
 								within 1 week.
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
