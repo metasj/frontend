@@ -8,7 +8,7 @@
 
 <p align="center" ><img src="https://hyperscale-production.up.railway.app/logo.svg" width="100px"><p>
 <h1 align="center"><a href="https://hyperscale-production.up.railway.app/">Hyperscale</a></h1>
-<p align="center"><strong>Fast funding for early crypto projects<strong></p>
+<p align="center"><strong>Fast funding for early blockchain projects<strong></p>
 
 Open source and open to contributors!
 
