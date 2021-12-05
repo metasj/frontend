@@ -1,5 +1,5 @@
 import Head from 'next/head'
-export default ({ title, desc }) => {
+const Meta = ({ title, desc }) => {
 	title = title ?? 'Hyperscale - Fast Funding'
 	desc =
 		desc ??
@@ -25,3 +25,5 @@ export default ({ title, desc }) => {
 		</Head>
 	)
 }
+
+export default Meta

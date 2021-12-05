@@ -234,16 +234,16 @@ const Landing = () => (
 				</div>
 			</div>
 		</div>
-		<footer class="footer-1 bg-gray-100 py-8 sm:py-12">
-			<div class="container mx-auto px-4">
-				<div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+		<footer className="footer-1 bg-gray-100 py-8 sm:py-12">
+			<div className="container mx-auto px-4">
+				<div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
 					{footer.map(column => (
-						<div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-							<h5 class="text-xl font-bold mb-6">{column.name}</h5>
-							<ul class="list-none footer-links">
+						<div key={column.name} className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+							<h5 className="text-xl font-bold mb-6">{column.name}</h5>
+							<ul className="list-none footer-links">
 								{column.items.map(item => (
-									<li class="mb-2">
-										<a href={item.url} class="font-medium text-gray-500 hover:text-gray-900">
+									<li key={item.name} className="mb-2">
+										<a href={item.url} className="font-medium text-gray-500 hover:text-gray-900">
 											{item.name}
 										</a>
 									</li>
@@ -251,12 +251,12 @@ const Landing = () => (
 							</ul>
 						</div>
 					))}
-					<div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
-						<h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Get Funded</h5>
-						<div class="flex sm:justify-center xl:justify-start">
+					<div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+						<h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Get Funded</h5>
+						<div className="flex sm:justify-center xl:justify-start">
 							<a
 								href="#"
-								class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+								className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
 							>
 								Apply
 							</a>
