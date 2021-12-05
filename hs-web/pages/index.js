@@ -1,8 +1,9 @@
-import Image from 'next/image';
-import styles from '../styles/Landing.module.css';
-import classNames from 'classnames';
-import { useForm } from 'react-hook-form';
-import useApply from '../hooks/api';
+import Image from "next/image";
+import styles from "../styles/Landing.module.css";
+import classNames from "classnames";
+import { useForm } from "react-hook-form";
+import useApply from "../hooks/api";
+import JoinDiscord from "../components/buttons/JoinDiscord";
 
 export default function Home() {
   const { register, handleSubmit } = useForm({});
@@ -15,7 +16,7 @@ export default function Home() {
   });
 
   return (
-    <div className={classNames('min-vh-100 w-100', styles.bgHome)}>
+    <div className={classNames("min-vh-100 w-100", styles.bgHome)}>
       <div className="pa4">
         <div className="container center">
           <header className="flex justify-between items-center mb6">
@@ -67,12 +68,12 @@ export default function Home() {
                 <fieldset>
                   <div
                     className={classNames(
-                      'flex br-pill ph3 pv2 shadow-1',
-                      styles.formCta,
+                      "flex br-pill ph3 pv2 shadow-1",
+                      styles.formCta
                     )}
                   >
                     <input
-                      {...register('email')}
+                      {...register("email")}
                       className="w-100"
                       type="text"
                       placeholder="Your email address"
@@ -87,6 +88,7 @@ export default function Home() {
                   </div>
                 </fieldset>
               </form>
+              <JoinDiscord />
             </div>
           </section>
         </div>
