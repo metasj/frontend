@@ -70,3 +70,7 @@ button.btn {
 .shadow-1 {
   box-shadow: 7px 11px 15px rgba(0, 0, 0, 0.15);
 }
+
+.text-bold {
+  font-variation-settings: "wght" 700;
+}
