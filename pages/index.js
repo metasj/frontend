@@ -104,6 +104,15 @@ export default function Home() {
           </section>
         </div>
       </div>
+      {/*  The background vectors of crypto projects that should be hidden on mobile */}
+      <div
+        className={classNames(
+          "absolute right-0 hidden md:block",
+          styles.backgroundVector
+        )}
+      >
+        <img src="/icons/background_crypto.svg" />
+      </div>
     </div>
   );
 }
