@@ -1,4 +1,5 @@
 {
+  "name": "hs-web",
   "name": "hyperscale",
   "private": true,
   "scripts": {
@@ -8,20 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
-    "@tailwindcss/forms": "^0.3.4",
-    "autoprefixer": "^10.4.0",
-    "next": "12.0.7",
-    "postcss": "^8.4.4",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "next": "^12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tailwindcss": "^2.2.19"
+    "react-hook-form": "^7.20.5",
+    "react-query": "^3.34.0",
+    "tailwindcss": "^2.2.19",
+        "postcss": "^8.4.4",
+        "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@tailwindcss/forms": "^0.3.4",
+    "autoprefixer": "^10.4.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.37",
+    "@types/next": "^9.0.0",
+     "@types/react": "^17.0.37",
+    "babel-eslint": "^10.1.0",
     "eslint": "8.4.0",
-    "eslint-config-next": "12.0.7",
+    "eslint-config-next": "12.0.6",
+    "eslint-config-prettier": "^8.3.0",
     "typescript": "^4.5.2"
+  },
   }
 }
