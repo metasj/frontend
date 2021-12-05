@@ -36,9 +36,13 @@ const Landing = () => (
 			className="relative bg-white overflow-hidden"
 			style={{
 				background:
-					"url('/bg-patterns.svg') left top no-repeat, url('/bg-crypto.svg') right center no-repeat, linear-gradient(244.75deg, #D1D5FC -10.92%, #F3F3FA 30.96%, #FFFFFF 110.9%) center center",
+					"url('/bg-patterns.svg') left top no-repeat, linear-gradient(244.75deg, #D1D5FC -10.92%, #F3F3FA 30.96%, #FFFFFF 110.9%) center center",
 			}}
 		>
+			<div
+				className="pointer-events-none absolute inset-0 hidden lg:block"
+				style={{ background: "url('/bg-crypto.svg') right center no-repeat" }}
+			/>
 			<div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
 				<Popover>
 					<nav
