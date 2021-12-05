@@ -1,7 +1,10 @@
-@import '~tachyons/css/tachyons.min.css';
+@import "~tachyons/css/tachyons.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --primary-font: 'Quicksand', sans-serif;
+  --primary-font: "Quicksand", sans-serif;
   --primary-color: #2c2929;
   --primary-color-light: #3f3c3c;
 
