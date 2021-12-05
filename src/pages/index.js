@@ -2,6 +2,8 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import HyperscaleMark from '@/components/HyperscaleMark'
 import JoinDiscordIcon from '@/components/icons/JoinDiscordIcon'
+import TwitterIcon from '@/components/icons/TwitterIcon'
+import Meta from '@/components/Meta'
 import {
 	MenuIcon,
 	XIcon,
@@ -30,8 +32,28 @@ const features = [
 	{ name: 'Community Guidance', icon: MapIcon },
 ]
 
+const footer = [
+	{
+		name: 'About',
+		items: [
+			{ name: 'Twitter', url: '#' },
+			{ name: 'Manifesto', url: '#' },
+			{ name: 'The Team', url: '#' },
+		],
+	},
+	{
+		name: 'Help',
+		items: [
+			{ name: 'Support', url: '#' },
+			{ name: 'Contact Us', url: '#' },
+			{ name: 'Helpline', url: '#' },
+		],
+	},
+]
+
 const Landing = () => (
 	<div>
+		<Meta />
 		<div
 			className="relative bg-white overflow-hidden"
 			style={{
@@ -62,12 +84,12 @@ const Landing = () => (
 									</Popover.Button>
 								</div>
 							</div>
-							<div className="hidden md:block md:ml-10 md:space-x-10">
+							<div className="hidden md:block md:mr-10 md:space-x-10 md:ml-auto">
 								{navigation.map(item => (
 									<a
 										key={item.name}
 										href={item.href}
-										className="font-medium text-gray-500 hover:text-gray-900"
+										className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
 									>
 										{item.name}
 									</a>
@@ -212,6 +234,37 @@ const Landing = () => (
 				</div>
 			</div>
 		</div>
+		<footer className="footer-1 bg-gray-100 py-8 sm:py-12">
+			<div className="container mx-auto px-4">
+				<div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+					{footer.map(column => (
+						<div key={column.name} className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+							<h5 className="text-xl font-bold mb-6">{column.name}</h5>
+							<ul className="list-none footer-links">
+								{column.items.map(item => (
+									<li key={item.name} className="mb-2">
+										<a href={item.url} className="font-medium text-gray-500 hover:text-gray-900">
+											{item.name}
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+					<div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+						<h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Get Funded</h5>
+						<div className="flex sm:justify-center xl:justify-start">
+							<a
+								href="#"
+								className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+							>
+								Apply
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 )
 
