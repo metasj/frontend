@@ -16,6 +16,7 @@ module.exports = {
 			},
 			fontFamily: {
 				sans: ['Redrose', ...defaultTheme.fontFamily.sans],
+				'sans-og': defaultTheme.fontFamily.sans,
 			},
 		},
 	},

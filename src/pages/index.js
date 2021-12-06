@@ -100,10 +100,26 @@ const Landing = () => (
 					"url('/bg-patterns.svg') left top no-repeat, linear-gradient(244.75deg, #D1D5FC -10.92%, #F3F3FA 30.96%, #FFFFFF 110.9%) center center",
 			}}
 		>
-			<div
-				className="pointer-events-none absolute inset-0 hidden lg:block"
-				style={{ background: "url('/bg-crypto.svg') right center no-repeat" }}
-			/>
+			<div className="pointer-events-none">
+				<div
+					className="absolute top-[-667px] left-[626px] w-[1185px] h-[1186px] opacity-20"
+					style={{
+						background: 'radial-gradient(50% 50% at 50% 50%, #4FFEFE 0%, rgba(93, 186, 239, 0) 100%)',
+					}}
+				/>
+				<div
+					className="absolute top-[-463px] left-[-682px] w-[931px] h-[931px] opacity-20"
+					style={{
+						background: 'radial-gradient(50% 50% at 50% 50%, #ED008E 0%, rgba(239, 93, 146, 0) 100%)',
+					}}
+				/>
+				<div
+					className="absolute top-[-779px] left-[-82px] w-[1287px] h-[1287px] opacity-30"
+					style={{
+						background: 'radial-gradient(50% 50% at 50% 50%, #5D5FEF 0%, rgba(93, 95, 239, 0) 100%)',
+					}}
+				/>
+			</div>
 			<div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
 				<Popover>
 					<nav
@@ -112,9 +128,9 @@ const Landing = () => (
 					>
 						<div className="flex items-center flex-1">
 							<div className="flex items-center justify-between w-full md:w-auto">
-								<a href="#">
-									<span className="sr-only">Hyperscale</span>
-									<HyperscaleMark className="h-8 w-auto sm:h-10" />
+								<a className="flex items-center space-x-4" href="#">
+									<HyperscaleMark className="h-12 w-auto sm:h-12" />
+									<span className="text-indigo-500 text-4xl text-sans-og font-bold">Hyperscale</span>
 								</a>
 								<div className="-mr-2 flex items-center md:hidden">
 									<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -200,22 +216,17 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								<span>Receive up to 200k by filling out a simple application.</span>{' '}
-								<span>Decisions as fast as 1 week.</span>
+								<span>Recieve $200k for 5% by filling out a simple application.</span>{' '}
+								<span>You’ll recieve a decision within 1 week.</span>
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
 								<button
 									type="button"
-									className="inline-flex items-center px-8 py-2 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+									className="inline-flex items-center px-8 py-2 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 								>
 									Apply
 								</button>
 							</div>
-							<Link href="https://discord.gg/pVSbzYny2c" target="_blank" rel="noopener">
-								<a className="rounded-full inline-block px-4 py-2 mt-7 bg-[#6875EF] shadow">
-									<JoinDiscordIcon className="w-24" />
-								</a>
-							</Link>
 						</div>
 					</div>
 				</main>
