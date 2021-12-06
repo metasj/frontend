@@ -32,7 +32,7 @@ const features = [
 	{
 		name: 'Strong community',
 		icon: UserGroupIcon,
-		desc: 'All HyperscaleDAO investments will be plugged into the community of developers, experts, & fellow founders. We work as one furthering each other.',
+		desc: 'All HyperscaleDAO investments will be plugged into the community of developers, experts, & fellow founders. We work as one to further each other.',
 	},
 	{
 		name: 'Guidance',
