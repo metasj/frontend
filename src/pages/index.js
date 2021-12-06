@@ -245,8 +245,8 @@ const Landing = () => (
 				<img src="/timeline-lg.svg" className="hidden md:block" />
 			</div>
 		</div>
-		<footer className="flex items-center justify-between bg-indigo-50 py-8 px-40">
-			<div className="flex items-center space-x-10">
+		<footer className="flex items-center justify-between bg-indigo-50 py-8 px-4 md:px-40">
+			<div className="flex items-center space-x-6 md:space-x-10">
 				<Link href="/">
 					<a
 						className="font-bold text-lg text-transparent"
