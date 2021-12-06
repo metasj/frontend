@@ -27,7 +27,7 @@ const features = [
 	{
 		name: 'High speed funding',
 		icon: LightningBoltIcon,
-		desc: 'Just fill out an applicaiton and get funded in a few hours.',
+		desc: 'Just fill out an application and get funded in a few hours.',
 	},
 	{
 		name: 'Strong community',
