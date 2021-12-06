@@ -207,18 +207,21 @@ const Landing = () => (
 				<p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
 					Fast feedback and funding decisions so you can focus on execution.
 				</p>
-				<div className="mt-12">
+				<div className="mt-12 mx-12 md:mx-0">
 					<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 						{features.map(feature => (
 							<div key={feature.name} className="pt-6">
-								<div className="flow-root bg-indigo-50 rounded-lg px-6 pb-8">
+								<div className="flow-root bg-[#FBFBFF] rounded-lg px-6 pb-8">
 									<div className="-mt-6">
 										<div>
-											<span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md transform">
-												<feature.icon className="h-6 w-6 text-indigo-50" aria-hidden="true" />
+											<span
+												className="inline-flex items-center justify-center p-3 bg-white shadow rounded-md transform"
+												style={{ boxShadow: '0px 4px 16px 0px #3447AE26' }}
+											>
+												<feature.icon className="h-6 w-6 text-indigo-500" aria-hidden="true" />
 											</span>
 										</div>
-										<h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+										<h3 className="mt-8 text-lg font-medium text-indigo-500 tracking-tight">
 											{feature.name}
 										</h3>
 										<p className="mt-5 text-base text-gray-500">{feature.desc}</p>
@@ -230,30 +233,16 @@ const Landing = () => (
 				</div>
 			</div>
 		</div>
-		<div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-			<div>
+		<div className="py-16 lg:py-20 lg:px-8 bg-[#FAFAFE]">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6">
 				<h2 className="text-3xl font-extrabold text-gray-900">Timeline</h2>
 				<p className="mt-4 text-lg text-gray-500">
 					Kick off the process in five minutes, and get a response within a week.
 				</p>
 			</div>
-			<div className="mt-10 relative mx-4 md:mx-0">
-				<div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-8 space-y-6 md:space-y-0">
-					<TimelineItem item={timeline[0]} />
-					<div className="hidden md:block" />
-					<TimelineItem item={timeline[1]} />
-				</div>
-				<div className="relative my-10 hidden md:block">
-					<div className="absolute inset-y-0 left-0 w-6 h-6 rounded-full bg-yellow-300 -mt-2" />
-					<div className="w-full h-2 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-lg" />
-					<div className="absolute inset-y-0 right-0 w-6 h-6 rounded-full bg-yellow-400 -mt-2" />
-				</div>
-				<div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-8 space-y-6 md:space-y-0">
-					<div className="hidden md:block" />
-					<TimelineItem item={timeline[2]} />
-					<div className="hidden md:block" />
-					<TimelineItem item={timeline[3]} />
-				</div>
+			<div className="-mt-20 flex items-center justify-center">
+				<img src="/timeline-sm.svg" className="md:hidden" />
+				<img src="/timeline-lg.svg" className="hidden md:block" />
 			</div>
 		</div>
 		<footer className="flex items-center justify-between bg-indigo-50 py-8 px-40">
