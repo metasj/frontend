@@ -182,8 +182,8 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								<span>Recieve $200k for 5% by filling out a simple application.</span>{' '}
-								<span>You’ll recieve a decision within 1 week.</span>
+								<span>Receive $200k for 5% by filling out a simple application.</span>{' '}
+								<span>You’ll receive a decision within 1 week.</span>
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
 								<a
