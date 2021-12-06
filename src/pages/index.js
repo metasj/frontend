@@ -261,7 +261,7 @@ const Landing = () => (
 				</Link>
 				<a
 					className="font-medium"
-					href="https://twitter.com/0xHyperscale"
+					href="https://twitter.com/HyperscaleFund"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
