@@ -185,7 +185,7 @@ const Landing = () => (
 								<span>Receive $200k for 5% by filling out a simple application.</span>{' '}
 								<span>You’ll receive a decision within 1 week.</span>
 							</p>
-							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+							<div className="mt-8 sm:max-w-lg sm:mx-auto text-center lg:text-left lg:mx-0">
 								<a
 									href="https://airtable.com/shrLFCXD7BQXUg97K"
 									className="inline-flex items-center px-8 py-2 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
