@@ -253,6 +253,7 @@ const Landing = () => (
 						style={{
 							background: 'linear-gradient(87.28deg, #9048CD 4.68%, #7461E4 49.76%, #59A9F4 106.52%)',
 							backgroundClip: 'text',
+							WebkitBackgroundClip: 'text',
 						}}
 					>
 						Hyperscale
