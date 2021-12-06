@@ -14,7 +14,6 @@ import {
 	CashIcon,
 	InboxInIcon,
 	DocumentSearchIcon,
-	ChevronDownIcon,
 } from '@heroicons/react/outline'
 
 const navigation = [
@@ -232,7 +231,7 @@ const Landing = () => (
 					Fast feedback and funding decisions so you can focus on execution.
 				</p>
 				<div className="mt-12">
-					<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+					<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 						{features.map(feature => (
 							<div key={feature.name} className="pt-6">
 								<div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 group">
@@ -326,21 +325,21 @@ const Landing = () => (
 					Kick off the process in five minutes, and get a response within a week.
 				</p>
 			</div>
-			<div className="mt-10 relative">
-				<div className="grid grid-cols-4 gap-x-8">
+			<div className="mt-10 relative mx-4 md:mx-0">
+				<div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-8 space-y-6 md:space-y-0">
 					<TimelineItem item={timeline[0]} />
-					<div />
+					<div className="hidden md:block" />
 					<TimelineItem item={timeline[1]} />
 				</div>
-				<div className="relative my-10">
+				<div className="relative my-10 hidden md:block">
 					<div className="absolute inset-y-0 left-0 w-6 h-6 rounded-full bg-yellow-300 -mt-2" />
 					<div className="w-full h-2 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-lg" />
 					<div className="absolute inset-y-0 right-0 w-6 h-6 rounded-full bg-yellow-400 -mt-2" />
 				</div>
-				<div className="grid grid-cols-4 gap-x-8">
-					<div />
+				<div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-8 space-y-6 md:space-y-0">
+					<div className="hidden md:block" />
 					<TimelineItem item={timeline[2]} />
-					<div />
+					<div className="hidden md:block" />
 					<TimelineItem item={timeline[3]} />
 				</div>
 			</div>
@@ -351,9 +350,9 @@ const Landing = () => (
 			</h2>
 			<div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 				<div className="flex items-center justify-between pb-8">
-					<div className="md:grid md:grid-cols-2 md:gap-8 w-full">
+					<div className="grid grid-cols-2 gap-8 w-full">
 						{footer.map(section => (
-							<div key={section.name} className="mt-12 md:mt-0">
+							<div key={section.name}>
 								<h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
 									{section.name}
 								</h3>
