@@ -1,18 +1,9 @@
+import Link from 'next/link'
 import { Fragment } from 'react'
+import Meta from '@/components/Meta'
 import { Popover, Transition } from '@headlessui/react'
 import HyperscaleMark from '@/components/HyperscaleMark'
-import Meta from '@/components/Meta'
-import Link from 'next/link'
-import {
-	MenuIcon,
-	XIcon,
-	MapIcon,
-	LightningBoltIcon,
-	UserGroupIcon,
-	CashIcon,
-	InboxInIcon,
-	DocumentSearchIcon,
-} from '@heroicons/react/outline'
+import { MenuIcon, XIcon, MapIcon, LightningBoltIcon, UserGroupIcon } from '@heroicons/react/outline'
 
 const navigation = [
 	{ name: 'Discord', href: 'https://twitter.com/HyperscaleFund' },
@@ -34,21 +25,6 @@ const features = [
 		name: 'Guidance',
 		icon: MapIcon,
 		desc: 'We have the best developers, marketers, advisors, & investors in crypto. We’re all here to move your DAO forward.',
-	},
-]
-
-const timeline = [
-	{ title: 'Apply', desc: 'Takes 5 min.', icon: InboxInIcon },
-	{ title: 'Funding', desc: 'HyperscaleDAO exchanges liquid Hyperscale token for the DAO’s token.', icon: CashIcon },
-	{
-		title: 'Shareholder review',
-		desc: 'Members vote on new projects with their Hyperscale token.',
-		icon: DocumentSearchIcon,
-	},
-	{
-		title: 'Community support',
-		desc: 'When an investment is made the community has an incentive to help the DAO. The DAO just submits bounties and pays out their token. Catalyzers also receive Hyperscale tokens for helping.',
-		icon: UserGroupIcon,
 	},
 ]
 
@@ -95,7 +71,7 @@ const Landing = () => (
 									<span className="text-indigo-500 text-4xl text-sans-og font-bold">Hyperscale</span>
 								</a>
 								<div className="-mr-2 flex items-center md:hidden">
-									<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+									<Popover.Button className="bg-white bg-opacity-30 rounded-md p-2 inline-flex items-center justify-center text-gray-600 hover:text-gray-500 hover:bg-opacity-40 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
 										<span className="sr-only">Open main menu</span>
 										<MenuIcon className="h-6 w-6" aria-hidden="true" />
 									</Popover.Button>
@@ -106,7 +82,7 @@ const Landing = () => (
 									<a
 										key={item.name}
 										href={item.href}
-										className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+										className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-white hover:bg-opacity-30"
 									>
 										{item.name}
 									</a>
