@@ -232,7 +232,7 @@ const Landing = () => (
 					</a>
 				</Link>
 				{navigation.map(item => (
-					<a className="font-medium" href={item.href} target="_blank" rel="noopener noreferrer">
+					<a key={item.name} className="font-medium" href={item.href} target="_blank" rel="noopener noreferrer">
 						{item.name}
 					</a>
 				))}
