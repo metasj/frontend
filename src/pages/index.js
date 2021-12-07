@@ -231,22 +231,11 @@ const Landing = () => (
 						Hyperscale
 					</a>
 				</Link>
-				<a
-					className="font-medium"
-					href="https://twitter.com/HyperscaleFund"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					className="font-medium"
-					href="https://discord.com/invite/pVSbzYny2c"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Discord
-				</a>
+				{navigation.map(item => (
+					<a className="font-medium" href={item.href} target="_blank" rel="noopener noreferrer">
+						{item.name}
+					</a>
+				))}
 			</div>
 			<div>
 				<a
