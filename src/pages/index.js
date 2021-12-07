@@ -1,9 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import HyperscaleMark from '@/components/HyperscaleMark'
-import JoinDiscordIcon from '@/components/icons/JoinDiscordIcon'
 import Meta from '@/components/Meta'
-import TimelineItem from '@/components/TimelineItem'
 import Link from 'next/link'
 import {
 	MenuIcon,
@@ -17,10 +15,8 @@ import {
 } from '@heroicons/react/outline'
 
 const navigation = [
-	{ name: 'Home', href: '#' },
-	{ name: 'Vetting', href: '#' },
-	{ name: 'Process', href: '#' },
-	{ name: 'Mission', href: '#' },
+	{ name: 'Discord', href: 'https://twitter.com/HyperscaleFund' },
+	{ name: 'Twitter', href: 'https://discord.com/invite/pVSbzYny2c' },
 ]
 
 const features = [
