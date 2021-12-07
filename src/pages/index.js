@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Fragment } from 'react'
+import { Fragment, Component } from 'react'
 import Meta from '@/components/Meta'
 import { Popover, Transition } from '@headlessui/react'
 import HyperscaleMark from '@/components/HyperscaleMark'
@@ -9,6 +9,21 @@ const navigation = [
 	{ name: 'Discord', href: 'https://discord.com/invite/pVSbzYny2c' },
 	{ name: 'Twitter', href: 'https://twitter.com/HyperscaleFund' },
 ]
+
+const airtableUrl = "https://airtable.com/shrLFCXD7BQXUg97K"
+
+class ApplyButtonNav extends Component {
+	render() {
+		return(
+			<a
+				href={airtableUrl}
+				className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+			>
+				Apply
+			</a>
+		)
+	}
+}
 
 const features = [
 	{
@@ -90,12 +105,7 @@ const Landing = () => (
 							</div>
 						</div>
 						<div className="hidden md:block text-right">
-							<a
-								href="https://airtable.com/shrLFCXD7BQXUg97K"
-								className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-							>
-								Apply
-							</a>
+							<ApplyButtonNav/>
 						</div>
 					</nav>
 					<Transition
@@ -135,7 +145,7 @@ const Landing = () => (
 									))}
 								</div>
 								<a
-									href="https://airtable.com/shrLFCXD7BQXUg97K"
+									href={airtableUrl}
 									className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
 								>
 									Apply
@@ -159,7 +169,7 @@ const Landing = () => (
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto text-center lg:text-left lg:mx-0">
 								<a
-									href="https://airtable.com/shrLFCXD7BQXUg97K"
+									href={airtableUrl}
 									className="inline-flex items-center px-8 py-2 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-indigo-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 								>
 									Apply
@@ -238,12 +248,7 @@ const Landing = () => (
 				))}
 			</div>
 			<div>
-				<a
-					href="https://airtable.com/shrLFCXD7BQXUg97K"
-					className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-				>
-					Apply
-				</a>
+				<ApplyButtonNav/>
 			</div>
 		</footer>
 	</div>
