@@ -29,17 +29,17 @@ const features = [
 	{
 		name: 'High speed funding',
 		icon: LightningBoltIcon,
-		desc: 'Just fill out an application and get funded in a few hours.',
+		desc: 'Fill out an application and get funded in a few days.',
 	},
 	{
 		name: 'Strong community',
 		icon: UserGroupIcon,
-		desc: 'All HyperscaleDAO investments will be plugged into the community of developers, experts, & fellow founders. We work as one to further each other.',
+		desc: 'Hyperscale investments are plugged into our community of developers, experts, & fellow founders.',
 	},
 	{
 		name: 'Guidance',
 		icon: MapIcon,
-		desc: 'We have the best developers, marketers, advisors, & investors in crypto. We’re all here to move your DAO forward.',
+		desc: 'Our network of advisors are here to support and accelerate your work. We work as one to further each other.',
 	},
 ]
 
@@ -166,7 +166,7 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								<span>Receive $200k for 5% by filling out a simple application.</span>{' '}
+								<span>Receive up to $1M by filling out a simple application.</span>{' '}
 								<span>You’ll receive a decision within 1 week.</span>
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto text-center lg:text-left lg:mx-0">
@@ -186,7 +186,7 @@ const Landing = () => (
 			<div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
 				<h2 className="text-base font-semibold tracking-wider text-indigo-500 uppercase">Zero to funded</h2>
 				<p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-					Get your idea off the ground in hours, not months
+					Get your idea off the ground in days, not months
 				</p>
 				<p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
 					Fast feedback and funding decisions so you can focus on execution.
