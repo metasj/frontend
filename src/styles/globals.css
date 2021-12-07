@@ -32,9 +32,13 @@
     }
 }
 
-  @font-face {
+@font-face {
     font-family: Redrose;
     font-style: normal;
     font-display: swap;
     src: local('Redrose'), url('/RedRose.ttf') format('ttf');
-  }
+}
+
+.underlined {
+  background: linear-gradient(#FFD17F, #FFD17F) 0 var(--y-pos, 90%) / 100% var(--size, 12px) no-repeat;
+}
