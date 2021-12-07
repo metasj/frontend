@@ -10,11 +10,11 @@ const navigation = [
 	{ name: 'Twitter', href: 'https://twitter.com/HyperscaleFund' },
 ]
 
-const airtableUrl = "https://airtable.com/shrLFCXD7BQXUg97K"
+const airtableUrl = 'https://airtable.com/shrLFCXD7BQXUg97K'
 
 class ApplyButtonNav extends Component {
 	render() {
-		return(
+		return (
 			<a
 				href={airtableUrl}
 				className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded shadow-sm text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -97,6 +97,7 @@ const Landing = () => (
 									<a
 										key={item.name}
 										href={item.href}
+										target="_blank"
 										className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-white hover:bg-opacity-30"
 									>
 										{item.name}
@@ -105,7 +106,7 @@ const Landing = () => (
 							</div>
 						</div>
 						<div className="hidden md:block text-right">
-							<ApplyButtonNav/>
+							<ApplyButtonNav />
 						</div>
 					</nav>
 					<Transition
@@ -159,7 +160,8 @@ const Landing = () => (
 						<div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
 							<h1>
 								<span className="mt-1 block text-gray-900 text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-									<span className="underlined">Fast</span> funding for <span className="underlined">early</span> blockchain projects
+									<span className="underlined">Fast</span> funding for{' '}
+									<span className="underlined">early</span> blockchain projects
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -241,13 +243,19 @@ const Landing = () => (
 					</a>
 				</Link>
 				{navigation.map(item => (
-					<a key={item.name} className="font-medium" href={item.href} target="_blank" rel="noopener noreferrer">
+					<a
+						key={item.name}
+						className="font-medium"
+						href={item.href}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						{item.name}
 					</a>
 				))}
 			</div>
 			<div>
-				<ApplyButtonNav/>
+				<ApplyButtonNav />
 			</div>
 		</footer>
 	</div>
