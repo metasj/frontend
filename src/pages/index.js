@@ -23,23 +23,23 @@ const features = [
 	{
 		name: 'High speed funding',
 		icon: LightningBoltIcon,
-		desc: 'Fill out an application and get funded in a few days.',
+		desc: 'Just fill out an application and get funded in a few hours.',
 	},
 	{
 		name: 'Strong community',
 		icon: UserGroupIcon,
-		desc: 'All Hyperscale investments are plugged into our community of developers, experts, & fellow founders.',
+		desc: 'All HyperscaleDAO investments will be plugged into the community of developers, experts, & fellow founders. We work as one to further each other.',
 	},
 	{
 		name: 'Guidance',
 		icon: MapIcon,
-		desc: 'Our network of advisors are here to support and accelerate your work. We work as one to further each other.',
+		desc: 'We have the best developers, marketers, advisors, & investors in crypto. We’re all here to move your DAO forward.',
 	},
 ]
 
 const timeline = [
-	{ title: 'Apply', desc: 'Take 5 minutes to describe your project.', icon: InboxInIcon },
-	{ title: 'Funding', desc: 'Hyperscale exchanges liquid Hyperscale token for your DAO’s token.', icon: CashIcon },
+	{ title: 'Apply', desc: 'Takes 5 min.', icon: InboxInIcon },
+	{ title: 'Funding', desc: 'HyperscaleDAO exchanges liquid Hyperscale token for the DAO’s token.', icon: CashIcon },
 	{
 		title: 'Shareholder review',
 		desc: 'Members vote on new projects with their Hyperscale token.',
@@ -47,7 +47,7 @@ const timeline = [
 	},
 	{
 		title: 'Community support',
-		desc: 'The community shares the incentive for your DAO to succeed.',
+		desc: 'When an investment is made the community has an incentive to help the DAO. The DAO just submits bounties and pays out their token. Catalyzers also receive Hyperscale tokens for helping.',
 		icon: UserGroupIcon,
 	},
 ]
@@ -178,7 +178,7 @@ const Landing = () => (
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-								<span>Receive up to $1M by filling out a simple application.</span>{' '}
+								<span>Receive $200k for 5% by filling out a simple application.</span>{' '}
 								<span>You’ll receive a decision within 1 week.</span>
 							</p>
 							<div className="mt-8 sm:max-w-lg sm:mx-auto text-center lg:text-left lg:mx-0">
@@ -198,7 +198,7 @@ const Landing = () => (
 			<div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
 				<h2 className="text-base font-semibold tracking-wider text-indigo-500 uppercase">Zero to funded</h2>
 				<p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-					Get your idea off the ground in days, not months
+					Get your idea off the ground in hours, not months
 				</p>
 				<p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
 					Fast feedback and funding decisions so you can focus on execution.
