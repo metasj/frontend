@@ -6,8 +6,8 @@ import HyperscaleMark from '@/components/HyperscaleMark'
 import { MenuIcon, XIcon, MapIcon, LightningBoltIcon, UserGroupIcon } from '@heroicons/react/outline'
 
 const navigation = [
-	{ name: 'Discord', href: 'https://twitter.com/HyperscaleFund' },
-	{ name: 'Twitter', href: 'https://discord.com/invite/pVSbzYny2c' },
+	{ name: 'Discord', href: 'https://discord.com/invite/pVSbzYny2c' },
+	{ name: 'Twitter', href: 'https://twitter.com/HyperscaleFund' },
 ]
 
 const features = [
