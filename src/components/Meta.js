@@ -12,16 +12,16 @@ const Meta = ({ title, desc }) => {
 			<link rel="icon" href="logo.svg" />
 
 			<meta property="og:type" content="website" />
-			<meta property="og:url" content="https://hyperscale-production.up.railway.app" />
+			<meta property="og:url" content="https://hyperscaledao.vercel.app" />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={desc} />
-			<meta property="og:image" content="https://hyperscale-production.up.railway.app/og-image.png" />
+			<meta property="og:image" content="https://hyperscaledao.vercel.app/og-image.png" />
 
 			<meta property="twitter:card" content="summary_large_image" />
-			<meta property="twitter:url" content="https://hyperscale-production.up.railway.app" />
+			<meta property="twitter:url" content="https://hyperscaledao.vercel.app/" />
 			<meta property="twitter:title" content={title} />
 			<meta property="twitter:description" content={desc} />
-			<meta property="twitter:image" content="https://hyperscale-production.up.railway.app/og-image.png" />
+			<meta property="twitter:image" content="https://hyperscaledao.vercel.app/og-image.png" />
 		</Head>
 	)
 }
