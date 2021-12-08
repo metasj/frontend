@@ -1,9 +1,7 @@
 import Head from 'next/head'
 const Meta = ({ title, desc }) => {
 	title = title ?? 'Hyperscale - Fast Funding'
-	desc =
-		desc ??
-		'Fast funding for early crypto projects. Receive $200k for 5% by filling out a simple application. You’ll recieve a decision within 1 week.'
+	desc = desc ?? "Receive up to 1 mill by filling out a simple application. You'll receive a decision within 1 week."
 	return (
 		<Head>
 			<title>{title}</title>
