@@ -13,13 +13,13 @@ const Meta = ({ title, desc }) => {
 			<meta property="og:url" content="https://hyperscalefund.com" />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={desc} />
-			<meta property="og:image" content="https://hyperscalefund.com/og-image.png" />
+			<meta property="og:image" content="https://hyperscalefund.com/og-image.png?1" />
 
 			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:url" content="https://hyperscalefund.com/" />
 			<meta property="twitter:title" content={title} />
 			<meta property="twitter:description" content={desc} />
-			<meta property="twitter:image" content="https://hyperscalefund.com/og-image.png" />
+			<meta property="twitter:image" content="https://hyperscalefund.com/og-image.png?1" />
 		</Head>
 	)
 }
